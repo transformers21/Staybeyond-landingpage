@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'BluuNext-Bold';
+  src: url("/assets/fonts/BluuNext-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'bambino';
+  src: url("/assets/fonts/Bambino Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+.checkout-page {
+  min-height: 800px; }
+  @media (min-width: 768px) {
+    .checkout-page {
+      margin-top: 80px;
+      min-height: 300px; } }
+  .checkout-page .reservation {
+    width: 100vw;
+    margin-left: calc(-50vw + 50% - 8px);
+    position: relative;
+    left: 0;
+    background: url("/assets/images/CEL079-TAKE-01-7613-small.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 320px;
+    color: red; }
+  .checkout-page .reservation .box {
+    position: absolute;
+    bottom: 0;
+    background: #ffffff;
+    text-align: center;
+    font-size: 46px;
+    font-family: "BluuNext-Bold";
+    color: #103d5c;
+    font-weight: bold; }
+  .checkout-page .reservation-box {
+    font-family: "bambino";
+    color: #98a0b4;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 61px; }
+    .checkout-page .reservation-box .title {
+      font-weight: bold;
+      font-size: 21px; }
+    .checkout-page .reservation-box .features {
+      margin-top: 15px;
+      text-align: center; }
+      .checkout-page .reservation-box .features .feature img {
+        max-height: 31px; }
+  .checkout-page .blue-background {
+    background: #103d5c;
+    padding-bottom: 10px;
+    color: #ffffff;
+    position: relative; }
+    .checkout-page .blue-background .centeredOverlay {
+      position: absolute;
+      /*dim the background*/
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      text-align: center;
+      z-index: 999; }
+    .checkout-page .blue-background .centeredOverlay .popup-payment {
+      font-family: bambino;
+      background-color: #6ac5da;
+      text-align: center;
+      width: 600px;
+      min-height: 200px;
+      border: 10px solid #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .checkout-page .blue-background .centeredOverlay .popup-payment span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 -50% 0 0;
+      transform: translate(-50%, -50%);
+      font-size: 18px; }
+    .checkout-page .blue-background .form-top {
+      margin-top: 28px; }
+    .checkout-page .blue-background input[type=text], .checkout-page .blue-background label {
+      font-family: bambino;
+      font-size: 12px;
+      text-align: left; }
+    .checkout-page .blue-background input[type=text] {
+      border-radius: 5px;
+      border: none;
+      background-color: #0D2F48;
+      height: 45px;
+      line-height: 13px;
+      color: #ffffff; }
+    .checkout-page .blue-background .payment-details {
+      color: #ffffff; }
+      .checkout-page .blue-background .payment-details .title {
+        text-align: center;
+        font-weight: bold;
+        font-family: BluuNext-Bold; }
+      .checkout-page .blue-background .payment-details .title-small {
+        font-family: bambino;
+        text-align: center;
+        font-size: 16px; }
+      .checkout-page .blue-background .payment-details .input-group {
+        width: 100%;
+        margin-top: 15px; }
+    .checkout-page .blue-background .payment-icons {
+      margin-top: 15px;
+      text-align: center; }
+      .checkout-page .blue-background .payment-icons .box .payment-icon {
+        max-height: 71px; }
+    .checkout-page .blue-background .card-info .slash {
+      vertical-align: middle; }
+    .checkout-page .blue-background .card-info .card-number {
+      top: 35px;
+      position: relative; }
+    .checkout-page .blue-background .card-info .date-entry {
+      width: 100%; }
+    .checkout-page .blue-background .call {
+      text-align: center;
+      font-family: "bambino";
+      color: #ffffff;
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 15px; }
+      .checkout-page .blue-background .call a {
+        text-decoration: underline;
+        color: #ffffff; }
+      .checkout-page .blue-background .call .make_reservation {
+        font-family: "bambino";
+        background-color: #6ac5da;
+        text-transform: uppercase;
+        border-radius: 2px;
+        height: 65px;
+        width: 250px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1.875px;
+        margin-top: 20px;
+        margin-bottom: 10px; }
+
+/*# sourceMappingURL=checkout.component.css.map */

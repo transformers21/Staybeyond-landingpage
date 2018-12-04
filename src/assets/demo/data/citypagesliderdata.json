@@ -1,0 +1,22 @@
+{
+  "SliderData": [
+    {
+      "ID": 1,
+      "Title": "Image1",
+      "Image": "sliderimage4.jpg",
+      "Status": "item active"
+    },
+    {
+      "ID": 2,
+      "Title": "Image2",
+      "Image": "sliderimage5.jpg",
+      "Status": "item"
+    },
+    {
+      "ID": 3,
+      "Title": "Image3",
+      "Image": "sliderimage6.jpg",
+      "Status": "item"
+    }
+  ]
+}

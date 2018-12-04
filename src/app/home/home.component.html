@@ -1,0 +1,264 @@
+<div class="home-page">
+
+    <section class="first-section container-fluid">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="section-header">
+                    <h1>Handpicked family homes across the UK</h1>
+                    <p>Live like a local with the convenience<br/>and hospitality of a hotel.</p>
+                </div>
+                <div class="image-wrapper">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1 col-padding">
+                    <p-dropdown [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City"></p-dropdown>
+                    <span class="custom-input-group-icon"><img src="assets/images/icons/icon1.png"></span>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-padding">
+                    <p-calendar [(ngModel)]="checkinDate" placeholder="Check In"></p-calendar>
+                    <span class="custom-input-group-icon"><img src="assets/images/icons/icon23.png"></span>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-padding">
+                    <p-calendar [(ngModel)]="checkoutDate" placeholder="Check Out"></p-calendar>
+                    <span class="custom-input-group-icon"><img src="assets/images/icons/icon23.png"></span>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-padding">
+                    <input type="text" pInputText [(ngModel)]="guestNumber" placeholder="Guests"/>
+                    <span class="custom-input-group-icon"><img src="assets/images/icons/icon4.png"></span>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-padding">
+                    <button pButton type="button" label="SEARCH HOMES"></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="row second-section container-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hide-show-sec-title">
+          <span class="tiny-title">
+            WHAT WE OFFER
+          </span>
+            <h1>
+                The StayBeyond experience
+            </h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <img src="assets/images/image01.png" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right-column-abs">
+            <div class="show-hide-sec-title"><span class="tiny-title">
+            WHAT WE OFFER
+          </span>
+                <h1>
+                    The StayBeyond experience
+                </h1>
+            </div>
+            <p>
+                Enjoy a unique travel experience in one of our bespoke homes. Crisp linen and fully stocked toiletries, we never compromise on quality.<br/><br/>
+                Discover the best city secrets with our expert concierge service to assist you 24/7. Fully loaded with information, free calls and 3g data, stay connected with your complimentary Handy Smartphone.<br/><br/>
+                Whether you’re a foodie in London or a family in Oxford we promise your stay will be unforgettable.
+            </p>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section id="third-section" class="row third-section container-fluid">
+
+        <h1>Explore our cities</h1>
+
+        <div class="gallery">
+
+            <div *ngFor="let city of galleryCities, let i = index" class="col-xs-6 col-sm-6 col-md-4 col-lg-3"> <!--[ngClass]="returnCityClass()"-->
+                <p>{{city.Title}}</p>
+                <div class="city-image" style="position: relative;" (mouseenter)='onCityMouseover(city)' (mouseleave)='onCityMouseout(city)'>
+                    <div>  <!--[ngClass]="returnCityClass(city)"-->
+                        <img src="{{imageLocation + city.Image}}">
+                    </div>
+                    <div [class.view]="isHoverActivated[i]" class="blue-sec remove">  <!--*ngIf="isHovered(city)"-->
+                        <h5>{{city.Properties}}</h5>
+                        <span class="text-onhover">PROPERTIES<br/>IN {{city.Title}}</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="row fourth-section container-fluid">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h1 class="horizontal-title">Featured<br/>Homes</h1>
+            <h1 class="vertical-title">Featured<br/>Homes</h1>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="image-cont-1"><img src="assets/images/image1.jpg"></div>
+            <span class="fourth-section-title">SECLUDED FAMILY TOWNHOUSE</span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span class="fourth-section-icon"><img src="assets/images/icons/piconproperty.png"></span><h4>BRISTOL</h4>
+                    <span class="fourth-section-icon"><img src="assets/images/icons/icon8.png"></span><h4>5</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="image-cont-2"><img src="assets/images/image2.jpg"></div>
+            <span class="fourth-section-title">SEASIDE COTTAGE</span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span class="fourth-section-icon"><img src="assets/images/icons/piconproperty.png"></span><h4>BRIGHTON</h4>
+                    <span class="fourth-section-icon"><img src="assets/images/icons/icon8.png"></span><h4>5</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="row fifth-section-test container-fluid">
+        <div class="slide-wrapper">
+
+
+            <div id="homepage-feature" class="carousel slide" data-ride="carousel">
+              <!--  <ol class="carousel-indicators">
+                    <li *ngFor="let slidee of sliderImages; let i = index" data-target="#homepage-feature" data-slide-to="i" [ngClass]="slidee.Status"></li>
+                </ol>-->
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div *ngFor="let slide of sliderImages, let curNum = index" [ngClass]="slide.Status">
+
+                        <div class="row resp-title-s">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <span class="tiny-title">
+                                    GUEST REVIEWS
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
+                            <div class="image-cont">
+                                <img src="{{imageLocation + slide.Image}}">
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right-column-abs">
+                            <div class="row hide-title-on-resp">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <span class="tiny-title">
+                                        <span>GUEST REVIEWS</span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row num-section-resp">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h1>
+                                        0{{curNum + 1}}
+                                    </h1>
+                                    <h3>
+                                        /0{{sliderImages.length}}
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p>
+                                        {{slide.Description}}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h2>
+                                        {{slide.Person}}
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <span class="tiny-title-2">
+                                        {{slide.PersonType}}, {{slide.Location}}
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 dots-abs">
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 spc-num">
+                            <a class="arrow-icon arrow-icons-b" href="#homepage-feature" data-slide="prev">
+                                <img src="assets/images/arrow_left.jpg">
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 spc-num">
+                            <ol class="carousel-indicators">
+                                <li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
+                                <li data-target="#homepage-feature" data-slide-to="1"></li>
+                                <li data-target="#homepage-feature" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 spc-num">
+                            <a class="arrow-icon arrow-icons-f" href="#homepage-feature" data-slide="next">
+                                <img src="assets/images/arrow_right.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="spacer do-not-show"></div>
+
+    <section class="row sixth-section container-fluid">
+        <div class="blue-section">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img src="assets/images/sixthimage.jpg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right-column-abs">
+                <h1>
+                    Rent your<br/>
+                    home with us
+                </h1>
+
+                <p>
+                    We are always on the lookout for beautiful homes to become part of our exclusive collection of luxury holiday rentals. Submit your property or learn more about becoming a StayBeyond Property Partner below.
+                    <br/><br/><br/><button pButton type="button" label="LIST YOUR HOME"></button>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</div>

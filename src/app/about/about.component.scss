@@ -1,0 +1,347 @@
+.about-page {
+
+  .first-section {
+    max-width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+
+    .image-wrapper {
+      img {
+        width: 100%;
+      }
+
+      .title-container {
+        background: #fff;
+        margin: 0 auto;
+        padding: 10px 80px;
+        position: absolute;
+        max-width: 500px;
+        max-height: 295px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        top: 82%;
+
+        h1 {
+          font-style: normal;
+          font-weight: normal;
+          line-height: 70px;
+          font-size: 60px;
+          text-align: center;
+          color: #103D5C;
+        }
+      }
+    }
+  }
+
+  .second-section {
+    padding: 40px 0 40px 0;
+    margin: 40px auto;
+
+    background-image: url(/assets/images/textures/SB_Texture_04_Grey.png);
+    background-size: 621px 579px;
+    background-repeat: no-repeat;
+    background-position-y: 46px;
+
+    .rel {
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      width: auto;
+      margin: 0 10px 0 10px;
+      font-family: "Bambino-Regular" !important;
+
+      font-style: normal;
+      font-weight: normal;
+      line-height: 26px;
+      font-size: 16px;
+      color: #97A0B2;
+    }
+
+    h1 {
+      -webkit-transform: translateX(-120px);
+      transform: translateX(-120px);
+      padding: 0 0 30px 60px;
+      background: #fff;
+      margin: 0;
+    }
+  }
+
+  .third-section {
+    padding: 40px 0 40px 0;
+    margin: 40px auto;
+
+    .image-container-s {
+      background: url(/assets/images/aimage3.png) 50% 50% no-repeat; /* 50% 50% centers image in div */
+      width: 100%;
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .desktop-img {
+      display: block;
+    }
+
+    .mobile-img {
+      display: none;
+    }
+
+    p {
+      width: auto;
+      margin: 0 120px 0 50px;
+      font-family: "Bambino-Regular" !important;
+
+      font-style: normal;
+      font-weight: normal;
+      line-height: 26px;
+      font-size: 16px;
+      color: #97A0B2;
+    }
+
+    .rel {
+      position: relative;
+    }
+
+    h1 {
+      -webkit-transform: translateX(-60px);
+      transform: translateX(-60px);
+      padding: 0 0 30px 60px;
+      background: #fff;
+      margin: 0;
+    }
+  }
+
+}
+
+@media (max-width: 992px ) and (min-width: 662px){
+
+  .about-page {
+
+    .first-section {
+/*      .col-padding {
+        padding: 10px 0 !important;
+
+      }
+
+      .inside-image-container {
+        -webkit-transform: translateX(-50%) translateY(-100%) !important;
+        transform: translateX(-50%) translateY(-100%) !important;
+        padding: 10px 40px !important;
+
+      }
+
+      h1 {
+        font-size: 60px !important;
+      }
+
+      .search-container {
+        margin-top: 180px !important;
+      }*/
+
+    }
+
+    .second-section {
+      padding: 80px 0 0 0 !important;
+      background-size: 221px 379px !important;
+      background-position-y: 190px !important;
+
+      .hide-show-sec-title {
+        display: block !important;
+        z-index: 100;
+      }
+      .show-hide-sec-title {
+        display: none !important;
+      }
+
+      img {
+        width: 100% !important;
+      }
+
+      .right-column-abs {
+        position: initial !important;
+        top: 0 !important;
+      }
+      p {
+        margin: 30px 0px !important;
+      }
+
+      h1 {
+        -webkit-transform: none;
+        transform: none;
+        position: absolute;
+        top: -40px;
+        right: 10px;
+        z-index: 55;
+        padding: 10px 0 15px 15px;
+      }
+      .tiny-title {
+        position: initial !important;
+        left: 0 !important;
+        text-align: center;
+      }
+    }
+
+    .third-section {
+      margin: 30px auto 0 auto;
+
+      .desktop-img {
+        display: none !important;
+      }
+
+      .mobile-img {
+        display: block !important;
+      }
+
+      .right-column-abs {
+        position: relative !important;
+        top: -100px !important;
+      }
+
+      h1 {
+        padding: 0 0 45px 60px !important;
+      }
+
+      img {
+        width: 100% !important;
+      }
+
+      p {
+        margin: 30px 0px !important;
+      }
+
+    }
+
+  }
+}
+
+@media ( max-width: 662px ){
+
+  .about-page {
+
+    .first-section {
+      .image-wrapper {
+        margin-top: 0 !important;
+        background: url(/assets/images/msearchi1.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        width: 100% !important;
+        height: 150px !important;
+        background-position: 70% 50% !important;
+
+        img {
+          visibility: hidden !important;
+        }
+
+        .title-container {
+          margin: 0 auto !important;
+          padding: 10px !important;
+          width: 70% !important;
+
+          h1 {
+            font-size: 50px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            line-height: 50px !important;
+          }
+        }
+      }
+    }
+
+    .second-section {
+      padding: 80px 0 0 0 !important;
+      background-size: 221px 379px !important;
+      background-position-y: 190px !important;
+
+      .hide-show-sec-title {
+        display: block !important;
+        z-index: 100;
+      }
+      .show-hide-sec-title {
+        display: none !important;
+      }
+
+      img {
+        width: 100% !important;
+      }
+
+      .right-column-abs {
+        position: initial !important;
+        top: 0 !important;
+      }
+      p {
+        margin: 30px 0px !important;
+      }
+
+      h1 {
+        -webkit-transform: none;
+        transform: none;
+        position: absolute;
+        top: -40px;
+        right: 10px;
+        z-index: 55;
+        padding: 10px 0 15px 15px;
+      }
+      .tiny-title {
+        position: initial !important;
+        left: 0 !important;
+        text-align: center;
+      }
+    }
+
+    .third-section {
+      margin: 30px auto 0 auto !important;
+      padding: 40px 0 0 0;
+
+      .desktop-img {
+        display: none !important;
+      }
+
+      .mobile-img {
+        display: block !important;
+        background: url(/assets/images/aimage3.png) 50% 50% no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat !important;
+        width: 100% !important;
+        height: 430px !important;
+        background-position: 50% 50% !important;
+
+        img {
+          visibility: hidden;
+        }
+      }
+
+      .right-column-abs {
+        position: relative !important;
+        top: -100px !important;
+      }
+
+      h1 {
+        font-size: 40px;
+        display: block;
+        margin-right: 25px;
+        padding: 10px 10px 0 0 !important;
+        transform: none !important;
+      }
+
+      img {
+        width: 100% !important;
+      }
+
+      p {
+        margin: 30px 0px !important;
+      }
+
+    }
+
+  }
+}

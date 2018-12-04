@@ -1,0 +1,65 @@
+
+<div class="full-nav-container">
+    <div class='nav-2 container-fluid hidden-xs hidden-sm'>
+        <div class="row">
+            <div class="ui-g-5">
+                <ul class='topbar-menu'>
+                    <li role='menuitem'>
+                        <a href='#' [routerLink]="'/websitesettings/general'">
+                            <span>EXPLORE CITIES</span>
+                        </a>
+                    </li>
+                    <li role='menuitem'>
+                        <a href='#' [routerLink]="'/about'">
+                            <span>ABOUT US</span>
+                        </a>
+                    </li>
+                    <li role='menuitem'>
+                        <a href='#' [routerLink]="'/partner'">
+                            <span>PROPERTY PARTNER</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ui-g-3">
+                <div class="top-logo">
+                    <img src="assets/images/logo/StayBeyond_Logotype.png">
+                </div>
+            </div>
+            <div class="ui-g-4">
+                <button pButton type="button" label="LIST YOUR HOME"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid hidden-lg hidden-md" [class.blue_nav]="displayMenu" >
+        <div class="navbar-header" >
+            <button (click)="displayMenu=(displayMenu!==true)" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="assets/images/logo/StayBeyond_LogotypeSmall.png" *ngIf="!displayMenu" class="navbar-brand">
+            <img src="assets/images/logo/round-icon.png" *ngIf="displayMenu" class="navbar-brand">
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav"><li role='menuitem'>
+                <a href='#'>
+                    <span>EXPLORE CITIES</span>
+                </a>
+            </li>
+                <li role='menuitem'>
+                    <a href='#'>
+                        <span>ABOUT US</span>
+                    </a>
+                </li>
+                <li role='menuitem'>
+                    <a href='#'>
+                        <span>PROPERTY PARTNER</span>
+                    </a>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>

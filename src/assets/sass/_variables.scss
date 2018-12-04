@@ -1,0 +1,96 @@
+/* Common */
+$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
+$fontSize:14px;
+$textColor:#5f666c;
+$textSecondaryColor:lighten($textColor,10%);
+$borderRadius:2px;
+$dividerColor:#c9cdd2;
+$iconWidth:16px;
+$iconHeight:16px;
+$transitionDuration:.3s;
+$inputInvalidBorderColor:#f06364;
+
+/* Headers */
+$headerPadding:.5em 1em;
+$headerBgColor:#2d353c;
+$headerTextColor:#ffffff;
+$headerHoverBgColor:#444d56;
+
+/* Contents */
+$contentPadding:.5em 1em;
+$contentBorderColor:#c9cdd2;
+$contentBgColor:#ffffff;
+
+/* Forms */
+$inputPadding:.35em;
+$inputBgColor:#ffffff;
+$inputBorderColor:#a8acb1;
+$inputHoverBorderColor:#5f666c;
+$inputInvalidBorderColor:#f06364;
+
+$buttonTextColor: #ffffff;
+
+/* List Items */
+$listItemPadding:.5em 1em;
+$listItemHoverBgColor:#f0f3f5;
+$listItemHoverTextColor:#5f666c;
+
+/* Messages */
+$infoMessageBgColor:#2f8ee5;
+$infoMessageTextColor:#ffffff;
+$warnMessageBgColor:#f1b263;
+$warnMessageTextColor:#ffffff;
+$errorMessageBgColor:#f06364;
+$errorMessageTextColor:#ffffff;
+$successMessageBgColor:#57c279;
+$successMessageTextColor:#ffffff;
+
+/* Horizontal Menu */
+$hmenuBGColor:#f0f3f5;
+
+/* Misc */
+$maskBgColor:#424242;
+
+/* Predefined Colors */
+$turquoise:#00acac;
+$blue:#2f8ee5;
+$orange:#efa64c;
+$purple:#6c76af;
+$pink:#f16383;
+$lightBlue:#63c9f1;
+$green:#57c279;
+$deepPurple:#7e57c2;
+$black:#2d353c;
+
+
+@mixin font-face($style-name, $file, $family, $category:"") {
+  $filepath: "" + $family + "/" + $file;
+  @font-face {
+    font-family: "#{$style-name}";
+    src: url($filepath + ".eot");
+    src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+  }
+  %#{$style-name} {
+    font: {
+      @if $category != "" {
+        family: "#{$style-name}", #{$category};
+      } @else {
+        family: "#{$style-name}";
+        weight: normal;
+      }
+    }
+  }
+}
+
+@include font-face('BluuNext-Bold', 'BluuNext-Bold', '../../../../assets/layout/fonts/bambino', 'bold');
+@include font-face('Bambino-Regular', 'Bambino-Regular', '../../../../assets/layout/fonts/bambino', 'regular');
+@include font-face('Bambino-Light', 'Bambino-Light', '../../../../assets/layout/fonts/bambino', 'light');
+@include font-face('Bambino-Bold', 'Bambino-Bold', '../../../../assets/layout/fonts/bambino', 'bold');
+
+// fonts
+$primary-font : BluuNext-Bold;
+$secondary-font : Bambino-Regular;
+
+
+
+

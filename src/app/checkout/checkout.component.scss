@@ -1,0 +1,262 @@
+$tabletWidth: 768px;
+$desktopWidth: 1024px;
+$smallWidth: 480px;
+@font-face {
+  font-family: 'BluuNext-Bold';
+  src: url('/assets/fonts/BluuNext-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Bambino-Regular';
+  src: url('/assets/fonts/Bambino Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.checkout-page{
+  @media (min-width: $tabletWidth) {
+    margin-top: 80px;
+    min-height: 300px;
+  }
+  min-height: 800px;
+  .reservation{
+    width: 100vw;
+    margin-left: calc(-50vw + 50% - 8px);
+    position: relative;
+    left: 0;
+    background: url("/assets/images/CEL079-TAKE-01-7613-small.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 320px;
+    color: red;
+  }
+  .reservation .box{
+    position: absolute;
+    bottom: 0;
+    background: #ffffff;
+    text-align: center;
+    font-size: 46px;
+    font-family: "BluuNext-Bold";
+    color: rgb(16, 61, 92);
+    font-weight: bold;
+  }
+  .reservation-box {
+    font-family: "Bambino-Regular";
+    color: rgb(152, 160, 180);
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 61px;
+    .box{
+
+    }
+    .title{
+      font-weight: bold;
+      font-size: 21px;
+    }
+    .features {
+      margin-top: 15px;
+      text-align: center;
+        .feature img{
+          max-height:31px;
+        }
+    }
+  }
+  .blue-background {
+    background: rgb(16, 61, 92);
+    padding-bottom: 60px;
+    color:#ffffff;
+    position: relative;
+    margin: 0 -20px;
+    font-family: Bambino-Regular;
+    .centeredOverlay {
+      position: absolute;
+      /*dim the background*/
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      color:#ffffff;
+      text-align: center;
+      z-index: 999;
+    }
+
+    .centeredOverlay .popup-payment {
+      font-family: Bambino-Regular;
+      background-color: rgb(106, 197, 218);
+      text-align:center;
+      width: 600px;
+      min-height: 200px;
+      border: 10px solid #ffffff;
+      position: absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform:translate(-50%, -50%);
+      transform:translate(-50%, -50%);
+    }
+    .centeredOverlay .popup-payment span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 -50% 0 0;
+      transform: translate(-50%, -50%);
+      font-size:18px
+
+    }
+    .form-top{
+      margin-top:28px;
+    }
+
+    input[type=text], label {
+      font-family: Bambino-Regular;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    input[type=text] {
+      border-radius: 5px;
+      border: none;
+      background-color: #0D2F48;
+      height: 45px;
+      line-height: 13px;
+      color: #ffffff;
+    }
+
+    .form-control.form-control_first {
+      width: 20%;
+      float: none;
+      color: #97A0B2 !important;
+      text-align: center;
+    }
+
+    .form-control.form-control_second {
+      width: 70%;
+      float: none;
+    }
+
+    .payment-details {
+      color:#ffffff;
+      .title {
+        text-align: center;
+        font-weight: bold;
+        font-family: BluuNext-Bold;
+      }
+      .title-small {
+        font-family: Bambino-Regular;
+        text-align: center;
+        font-size: 16px;
+      }
+      .input-group {
+        width: 100%;
+        margin-top: 15px;
+      }
+
+    }
+
+
+    .payment-icons {
+      margin-top: 15px;
+      text-align: center;
+      .box {
+        .payment-icon{
+          max-height:58px;
+        }
+      }
+    }
+    .card-info{
+      .slash{
+        vertical-align: middle;
+      }
+      .card-number{
+        top: 35px;
+        position: relative;
+      }
+      .date-entry{
+        width: 100%;
+      }
+    }
+
+    .call{
+      text-align: center;
+      font-family: "Bambino-Regular";
+      color: #ffffff;
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 15px;
+      a{
+        text-decoration: underline;
+        color: #ffffff;
+      }
+      .make_reservation{
+        font-family: "Bambino-Regular";
+        background-color: rgb(106, 197, 218);
+        text-transform: uppercase;
+        border-radius: 2px;
+        height: 65px;
+        width: 250px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1.875px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    input.input__fa[type=text] {
+      background-color: #003651;
+      box-sizing: border-box;
+      padding-right: 60px;
+    }
+
+    .input__fa.input__fa_person {
+      background-image: url('/assets/images/input/input-user.png');
+      background-repeat: no-repeat;
+      background-position: right 10px;
+      background-size: 35px;
+      box-shadow: 5px 0 0 0 #003651;
+    }
+
+    .input__fa.input__fa_mail {
+      background-image: url('/assets/images/input/input-mail.png');
+      background-repeat: no-repeat;
+      background-position: right 10px;
+      background-size: 40px;
+      box-shadow: 5px 0 0 0 #003651;
+    }
+
+    .input__fa.input__fa_phone {
+      background-image: url('/assets/images/input/input-phone.png');
+      background-repeat: no-repeat;
+      box-shadow: 10px 0 0 0 #003651;
+      background-position: right 10px;
+      background-size: 22px;
+    }
+
+  }
+
+  .just_text {
+    h3 {
+      color:  #fff;
+      font-size: 17px;
+      line-height: 19px;
+      font-weight: 400;
+      text-align: center;
+    }
+    p {
+      color:  #fff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}

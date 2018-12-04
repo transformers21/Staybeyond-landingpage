@@ -1,0 +1,60 @@
+{
+  "CitiesGallery": [
+    {
+      "ID": 1,
+      "Title": "London",
+      "Image": "city-1.png",
+      "Properties": 26,
+      "label": "London",
+      "value": 1
+    },
+    {
+      "ID": 2,
+      "Title": "Oxford",
+      "Image": "city-2.png",
+      "Properties": 15,
+      "label": "Oxford",
+      "value": 2
+    },
+    {
+      "ID": 3,
+      "Title": "Cambridge",
+      "Image": "city-3.png",
+      "Properties": 8,
+      "label": "Cambridge",
+      "value": 3
+    },
+    {
+      "ID": 4,
+      "Title": "York",
+      "Image": "city-4.png",
+      "Properties": 5,
+      "label": "York",
+      "value": 4
+    },
+    {
+      "ID": 5,
+      "Title": "Bristol",
+      "Image": "city-4.png",
+      "Properties": 126,
+      "label": "Bristol",
+      "value": 5
+    },
+    {
+      "ID": 6,
+      "Title": "Bath",
+      "Image": "city-6.png",
+      "Properties": 77,
+      "label": "Bath",
+      "value": 6
+    },
+    {
+      "ID": 7,
+      "Title": "Brighton",
+      "Image": "city-7.png",
+      "Properties": 53,
+      "label": "Brighton",
+      "value": 7
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "SliderData": [
+    {
+      "ID": 1,
+      "Title": "Image1",
+      "Image": "sliderimage1.jpg",
+      "Person": "Mary",
+      "Description": "The house was very spacious, perfect for a group. It was centrally located so we were able to walk to Cambridge college and restourants. The park and river were right across the street. The loft bedroom was outstanding. I would definitly stay there again.",
+      "PersonType": "Guest",
+      "Location": "Cambridge",
+      "Status": "item active"
+    },
+    {
+      "ID": 2,
+      "Title": "Image2",
+      "Image": "sliderimage2.jpg",
+      "Person": "Tom",
+      "Description": "Lorem ipsum dolor sit amet, in quot natum mea, probo labore placerat vel in, te eam vitae efficiantur. Vel mediocrem rationibus expetendis in, cetero sententiae an mel. Omnis aeque commune vix ut, nulla liber quo in, ea eos timeam laoreet. No animal dolores percipitur sit. Eos tamquam meliore lucilius ne, velit oblique vim ei.",
+      "PersonType": "Guest",
+      "Location": "London",
+      "Status": "item"
+    },
+    {
+      "ID": 3,
+      "Title": "Image3",
+      "Image": "sliderimage3.jpg",
+      "Person": "Marin",
+      "Description": "Delenit patrioque vix ei, ne unum detraxit mel. Id cum case antiopam qualisque, in accumsan detraxit voluptatum eum. Dicant fierent hendrerit vix eu, mel falli mollis cu. Vis malis timeam vituperatoribus ad, est omnesque convenire at.",
+      "PersonType": "Guest",
+      "Location": "Oxford",
+      "Status": "item"
+    }
+  ]
+}
